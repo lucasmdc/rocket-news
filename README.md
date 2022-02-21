@@ -1,7 +1,7 @@
 # RocketNews
 
 <div>
-  <img style="background-color: #121214" alt='RocketNews' src='https://raw.githubusercontent.com/lucasmdc/rocket-news/a9a6ad7874a31ddf751846c93bfb844e1dfd9e21/assets/logo.svg?raw=true' />
+  <img alt='RocketNews' src='https://raw.githubusercontent.com/lucasmdc/rocket-news/a9a6ad7874a31ddf751846c93bfb844e1dfd9e21/assets/logo.svg?raw=true' />
 
 #
   
