@@ -10,6 +10,8 @@
   --transition: 0.2s linear;
 }
 
+/* Specificity for overwrite properties from .icon class
+ without use !important (bad practice) */
 .action-color,
 .icon.action-color {
   background-color: var(--bg-action-color);
@@ -31,12 +33,16 @@
   outline: transparent;
 }
 
+/* Universal Selector doesn't not apply properties for 
+:after and :before pseudo-classes */
 *,
 :before,
 :after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; 
+} 
 
+/* Applied  rem for some HTML elements and, 
+for the rest, was used px */
 html {
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
@@ -118,6 +124,8 @@ legend {
     position: relative;
   }
 
+  /* some properties like background-clip does not effect in body element.
+  For get around this situation, was used :after pseudo-class */
   body:after {
     background: url('./assets/read_news.jpg') no-repeat calc(100% + 110px) top/auto 100% content-box fixed;
     content: '';
@@ -161,6 +169,7 @@ legend {
   transition: background-color var(--transition);
 }
 
+/* use background-color as color to the icons */
 .icon--send {
   -webkit-mask-image: url('./assets/send.svg');
   mask-image: url('./assets/send.svg');
